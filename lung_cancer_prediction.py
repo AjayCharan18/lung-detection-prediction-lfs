@@ -328,7 +328,7 @@ if best_model is not None:
         'treatment_type': 'Surgery'
     }
 
-    prediction = predict_survival(patient_data=example_patient, model_path='best_lung_cancer_model.pkl')
+    prediction = predict_survival(example_patient)
     
     if prediction.get('status') == 'success':
         print("\nPrediction Results:")
